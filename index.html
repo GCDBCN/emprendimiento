@@ -96,6 +96,29 @@
   .x{position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:50%;border:none;background:var(--bg2);color:var(--muted);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center}
   .x:hover{background:var(--line)}
   @media(max-width:560px){.dialog-top{flex-direction:column;align-items:center;text-align:center}.dialog-cover{flex-basis:140px;width:140px}}
+
+  .abanner{max-width:1180px;margin:26px auto 0;padding:0 20px}
+  .abanner-inner{position:relative;border-radius:18px;overflow:hidden;background:#140a2e;box-shadow:var(--shadow-lg)}
+  .abanner-inner::before{content:"";position:absolute;inset:0;background:radial-gradient(55% 90% at 12% 18%,#8b5cf6,rgba(139,92,246,0) 60%),radial-gradient(55% 90% at 88% 85%,#f59e0b,rgba(245,158,11,0) 60%),radial-gradient(60% 90% at 60% 40%,#d946ef,rgba(217,70,239,0) 66%),linear-gradient(135deg,#4c1d95,#831843 58%,#155e63);z-index:0}
+  .aslide{position:absolute;inset:0;display:flex;align-items:center;gap:28px;padding:26px 64px;opacity:0;transition:opacity .6s;pointer-events:none;z-index:1}
+  .aslide.on{opacity:1;pointer-events:auto;position:relative}
+  .aslide img{width:124px;height:124px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,.5);box-shadow:0 12px 30px rgba(0,0,0,.35);flex:0 0 auto}
+  .aslide .ainfo{color:#fff;z-index:1}
+  .aslide .ak{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#febd69;font-weight:700}
+  .aslide .an{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:5px 0 5px}
+  .aslide .at{color:rgba(255,255,255,.88);font-size:15.5px;margin-bottom:14px}
+  .aslide .ab{display:inline-block;background:rgba(255,255,255,.17);backdrop-filter:blur(6px);color:#fff;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:999px}
+  .aslide .ab:hover{background:rgba(255,255,255,.3)}
+  .anav{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;border:none;background:rgba(255,255,255,.18);color:#fff;font-size:20px;line-height:1;cursor:pointer;z-index:3;display:flex;align-items:center;justify-content:center}
+  .anav:hover{background:rgba(255,255,255,.34)}
+  .aprev{left:12px}.anext{right:12px}
+  .adots{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:3}
+  .adot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.45);border:none;cursor:pointer;padding:0;transition:.2s}
+  .adot.on{background:#fff;width:22px;border-radius:5px}
+  .benefits{max-width:1180px;margin:16px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .benefit{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:13px 16px;font-size:13px;color:var(--soft);font-weight:600}
+  .benefit b{display:block;color:var(--ink);font-size:14px;margin-bottom:2px}
+  @media(max-width:760px){.benefits{grid-template-columns:repeat(2,1fr)}.aslide{padding:22px 52px;gap:18px}.aslide img{width:90px;height:90px}.aslide .an{font-size:21px}.aslide .at{font-size:14px}}
 </style>
 </head>
 <body>
@@ -115,6 +138,27 @@
     <div class="stat" id="stat"></div>
   </div>
 </section>
+
+
+<section class="abanner"><div class="abanner-inner" id="abanner">
+  <button class="anav aprev" onclick="aMove(-1)" aria-label="Autor anterior">‹</button>
+    <div class="aslide on"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Robert_Greene_B%26W.jpg/330px-Robert_Greene_B%26W.jpg" alt="Robert Greene" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Robert Greene</div><div class="at">Poder, estrategia y naturaleza humana</div><a class="ab" href="/blog/robert-greene.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Robert_Kiyosaki_%2853864555330%29_%28cropped%29.jpg/330px-Robert_Kiyosaki_%2853864555330%29_%28cropped%29.jpg" alt="Robert Kiyosaki" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Robert Kiyosaki</div><div class="at">Educación financiera y libertad</div><a class="ab" href="/blog/robert-kiyosaki.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Napoleon_Hill_headshot.jpg/330px-Napoleon_Hill_headshot.jpg" alt="Napoleon Hill" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Napoleon Hill</div><div class="at">El clásico del éxito y la mentalidad</div><a class="ab" href="/blog/napoleon-hill.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Dale_Carnegie_%281937%29.jpg/330px-Dale_Carnegie_%281937%29.jpg" alt="Dale Carnegie" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Dale Carnegie</div><div class="at">Relaciones, comunicación e influencia</div><a class="ab" href="/blog/dale-carnegie.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Daniel_Goleman_-_World_Economic_Forum_Annual_Meeting_2011.jpg/330px-Daniel_Goleman_-_World_Economic_Forum_Annual_Meeting_2011.jpg" alt="Daniel Goleman" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Daniel Goleman</div><div class="at">El padre de la inteligencia emocional</div><a class="ab" href="/blog/daniel-goleman.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Stephen_Covey_174-CD-L05-03-02A-002_%28cropped%29.jpg/330px-Stephen_Covey_174-CD-L05-03-02A-002_%28cropped%29.jpg" alt="Stephen Covey" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Stephen Covey</div><div class="at">Hábitos y efectividad personal</div><a class="ab" href="/blog/stephen-covey.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Seth_Godin_in_2009.jpg/330px-Seth_Godin_in_2009.jpg" alt="Seth Godin" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Seth Godin</div><div class="at">Marketing que se hace notar</div><a class="ab" href="/blog/seth-godin.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Viktor_Frankl2.jpg/330px-Viktor_Frankl2.jpg" alt="Viktor Frankl" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Viktor Frankl</div><div class="at">Sentido, propósito y resiliencia</div><a class="ab" href="/blog/viktor-frankl.html">Leer su perfil →</a></div></div>
+  <button class="anav anext" onclick="aMove(1)" aria-label="Autor siguiente">›</button>
+  <div class="adots"><button class="adot on" onclick="aDot(0)" aria-label="Robert Greene"></button><button class="adot" onclick="aDot(1)" aria-label="Robert Kiyosaki"></button><button class="adot" onclick="aDot(2)" aria-label="Napoleon Hill"></button><button class="adot" onclick="aDot(3)" aria-label="Dale Carnegie"></button><button class="adot" onclick="aDot(4)" aria-label="Daniel Goleman"></button><button class="adot" onclick="aDot(5)" aria-label="Stephen Covey"></button><button class="adot" onclick="aDot(6)" aria-label="Seth Godin"></button><button class="adot" onclick="aDot(7)" aria-label="Viktor Frankl"></button></div>
+</div></section>
+<div class="benefits">
+  <div class="benefit"><b>270 libros</b>seleccionados a mano</div>
+  <div class="benefit"><b>Reseñas y resúmenes</b>contenido original en el blog</div>
+  <div class="benefit"><b>Comprar en Amazon</b>al mejor precio y con garantía</div>
+  <div class="benefit"><b>Novedades cada día</b>nuevos artículos publicados</div>
+</div>
 
 <div class="controls"><div class="chips" id="chips"></div></div>
 
@@ -231,6 +275,18 @@ function openModal(id){
 }
 function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow='';}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+
+
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.aslide'));
+  var dots=[].slice.call(document.querySelectorAll('.adot'));
+  var i=0,t;
+  function go(n){if(!slides.length)return;slides[i].classList.remove('on');if(dots[i])dots[i].classList.remove('on');i=(n+slides.length)%slides.length;slides[i].classList.add('on');if(dots[i])dots[i].classList.add('on');}
+  window.aMove=function(d){go(i+d);reset();};
+  window.aDot=function(n){go(n);reset();};
+  function reset(){clearInterval(t);t=setInterval(function(){go(i+1);},5000);}
+  if(slides.length>1)reset();
+})();
 
 </script>
 
