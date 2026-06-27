@@ -119,6 +119,10 @@
   .benefit{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:13px 16px;font-size:13px;color:var(--soft);font-weight:600}
   .benefit b{display:block;color:var(--ink);font-size:14px;margin-bottom:2px}
   @media(max-width:760px){.benefits{grid-template-columns:repeat(2,1fr)}.aslide{padding:22px 52px;gap:18px}.aslide img{width:90px;height:90px}.aslide .an{font-size:21px}.aslide .at{font-size:14px}}
+  .rate{display:flex;align-items:center;gap:6px;margin:0 0 10px}
+  .stars{position:relative;display:inline-block;font-size:13px;line-height:1;letter-spacing:1px;color:#dfe3e8}
+  .stars .sfill{position:absolute;left:0;top:0;overflow:hidden;white-space:nowrap;color:#ff9900}
+  .rnum{font-size:12px;font-weight:700;color:#697386}
 </style>
 </head>
 <body>
@@ -142,14 +146,14 @@
 
 <section class="abanner"><div class="abanner-inner" id="abanner">
   <button class="anav aprev" onclick="aMove(-1)" aria-label="Autor anterior">‹</button>
-    <div class="aslide on"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Robert_Greene_B%26W.jpg/330px-Robert_Greene_B%26W.jpg" alt="Robert Greene" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Robert Greene</div><div class="at">Poder, estrategia y naturaleza humana</div><a class="ab" href="/blog/robert-greene.html">Leer su perfil →</a></div></div>
-    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Robert_Kiyosaki_%2853864555330%29_%28cropped%29.jpg/330px-Robert_Kiyosaki_%2853864555330%29_%28cropped%29.jpg" alt="Robert Kiyosaki" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Robert Kiyosaki</div><div class="at">Educación financiera y libertad</div><a class="ab" href="/blog/robert-kiyosaki.html">Leer su perfil →</a></div></div>
-    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Napoleon_Hill_headshot.jpg/330px-Napoleon_Hill_headshot.jpg" alt="Napoleon Hill" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Napoleon Hill</div><div class="at">El clásico del éxito y la mentalidad</div><a class="ab" href="/blog/napoleon-hill.html">Leer su perfil →</a></div></div>
-    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Dale_Carnegie_%281937%29.jpg/330px-Dale_Carnegie_%281937%29.jpg" alt="Dale Carnegie" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Dale Carnegie</div><div class="at">Relaciones, comunicación e influencia</div><a class="ab" href="/blog/dale-carnegie.html">Leer su perfil →</a></div></div>
-    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Daniel_Goleman_-_World_Economic_Forum_Annual_Meeting_2011.jpg/330px-Daniel_Goleman_-_World_Economic_Forum_Annual_Meeting_2011.jpg" alt="Daniel Goleman" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Daniel Goleman</div><div class="at">El padre de la inteligencia emocional</div><a class="ab" href="/blog/daniel-goleman.html">Leer su perfil →</a></div></div>
-    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Stephen_Covey_174-CD-L05-03-02A-002_%28cropped%29.jpg/330px-Stephen_Covey_174-CD-L05-03-02A-002_%28cropped%29.jpg" alt="Stephen Covey" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Stephen Covey</div><div class="at">Hábitos y efectividad personal</div><a class="ab" href="/blog/stephen-covey.html">Leer su perfil →</a></div></div>
-    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Seth_Godin_in_2009.jpg/330px-Seth_Godin_in_2009.jpg" alt="Seth Godin" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Seth Godin</div><div class="at">Marketing que se hace notar</div><a class="ab" href="/blog/seth-godin.html">Leer su perfil →</a></div></div>
-    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Viktor_Frankl2.jpg/330px-Viktor_Frankl2.jpg" alt="Viktor Frankl" loading="lazy"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Viktor Frankl</div><div class="at">Sentido, propósito y resiliencia</div><a class="ab" href="/blog/viktor-frankl.html">Leer su perfil →</a></div></div>
+    <div class="aslide on"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Robert_Greene_B%26W.jpg/330px-Robert_Greene_B%26W.jpg" alt="Robert Greene" loading="eager"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Robert Greene</div><div class="at">Poder, estrategia y naturaleza humana</div><a class="ab" href="/blog/robert-greene.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Robert_Kiyosaki_%2853864555330%29_%28cropped%29.jpg/330px-Robert_Kiyosaki_%2853864555330%29_%28cropped%29.jpg" alt="Robert Kiyosaki" loading="eager"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Robert Kiyosaki</div><div class="at">Educación financiera y libertad</div><a class="ab" href="/blog/robert-kiyosaki.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Napoleon_Hill_headshot.jpg/330px-Napoleon_Hill_headshot.jpg" alt="Napoleon Hill" loading="eager"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Napoleon Hill</div><div class="at">El clásico del éxito y la mentalidad</div><a class="ab" href="/blog/napoleon-hill.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Dale_Carnegie_%281937%29.jpg/330px-Dale_Carnegie_%281937%29.jpg" alt="Dale Carnegie" loading="eager"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Dale Carnegie</div><div class="at">Relaciones, comunicación e influencia</div><a class="ab" href="/blog/dale-carnegie.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Daniel_Goleman_-_World_Economic_Forum_Annual_Meeting_2011.jpg/330px-Daniel_Goleman_-_World_Economic_Forum_Annual_Meeting_2011.jpg" alt="Daniel Goleman" loading="eager"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Daniel Goleman</div><div class="at">El padre de la inteligencia emocional</div><a class="ab" href="/blog/daniel-goleman.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Stephen_Covey_174-CD-L05-03-02A-002_%28cropped%29.jpg/330px-Stephen_Covey_174-CD-L05-03-02A-002_%28cropped%29.jpg" alt="Stephen Covey" loading="eager"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Stephen Covey</div><div class="at">Hábitos y efectividad personal</div><a class="ab" href="/blog/stephen-covey.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Seth_Godin_in_2009.jpg/330px-Seth_Godin_in_2009.jpg" alt="Seth Godin" loading="eager"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Seth Godin</div><div class="at">Marketing que se hace notar</div><a class="ab" href="/blog/seth-godin.html">Leer su perfil →</a></div></div>
+    <div class="aslide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Viktor_Frankl2.jpg/330px-Viktor_Frankl2.jpg" alt="Viktor Frankl" loading="eager"><div class="ainfo"><div class="ak">Autor destacado</div><div class="an">Viktor Frankl</div><div class="at">Sentido, propósito y resiliencia</div><a class="ab" href="/blog/viktor-frankl.html">Leer su perfil →</a></div></div>
   <button class="anav anext" onclick="aMove(1)" aria-label="Autor siguiente">›</button>
   <div class="adots"><button class="adot on" onclick="aDot(0)" aria-label="Robert Greene"></button><button class="adot" onclick="aDot(1)" aria-label="Robert Kiyosaki"></button><button class="adot" onclick="aDot(2)" aria-label="Napoleon Hill"></button><button class="adot" onclick="aDot(3)" aria-label="Dale Carnegie"></button><button class="adot" onclick="aDot(4)" aria-label="Daniel Goleman"></button><button class="adot" onclick="aDot(5)" aria-label="Stephen Covey"></button><button class="adot" onclick="aDot(6)" aria-label="Seth Godin"></button><button class="adot" onclick="aDot(7)" aria-label="Viktor Frankl"></button></div>
 </div></section>
@@ -171,7 +175,7 @@
 <footer><div class="foot">
   <div><b>Emprendimiente</b> · emprendimiente.com — la biblioteca para entrenar tu mente</div>
   <div style="max-width:680px;margin:10px auto 0">
-    Como Afiliado de Amazon, este sitio obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables.
+    Como Afiliado de Amazon, este sitio obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables. Las valoraciones con estrellas son una selección editorial de Emprendimiente y no reflejan las puntuaciones de Amazon.
     Precios y disponibilidad pueden variar. Portadas e imágenes pertenecen a sus respectivos propietarios y se muestran con fines identificativos.
   </div>
 </div></footer>
@@ -219,6 +223,9 @@ function amazonUrl(b){
   return `https://www.${AMAZON_DOMAIN}/s?k=${q}&tag=${AFFILIATE_TAG}`;
 }
 function coverUrl(id){return `https://covers.openlibrary.org/b/id/${id}-L.jpg?default=false`;}
+const FAMOUS=/kiyosaki|greene|goleman|carnegie|covey|godin|frankl|napoleon hill|kahneman|cialdini|eric ries|clason|maxwell|robbins|sun tzu|gladwell|csikszentmihalyi|kawasaki|al ries|harv eker|og mandino/i;
+function score(b){let r=4.2;if(b.cover)r+=0.3;if(FAMOUS.test(b.full))r+=0.5;return Math.min(5,Math.round(r*10)/10);}
+function rateHTML(b){const r=score(b);const pct=r/5*100;return `<div class="rate" title="Valoración editorial de Emprendimiente — nuestra opinión, no es la nota de Amazon"><span class="stars"><span class="sfill" style="width:${pct}%">★★★★★</span>★★★★★</span><span class="rnum">${r.toFixed(1)}</span></div>`;}
 
 const grid=document.getElementById('grid'),chipsEl=document.getElementById('chips');
 const qEl=document.getElementById('q'),countEl=document.getElementById('count'),emptyEl=document.getElementById('empty');
@@ -245,6 +252,7 @@ function cardHTML(b){
       <div class="cat">${b.cat}</div>
       <div class="title" onclick="openModal(${b._id})">${esc(b.title)}</div>
       <div class="author">${esc(b.author||'—')}</div>
+      ${rateHTML(b)}
       <button class="btn ghost" onclick="openModal(${b._id})">Leer descripción</button>
       <a class="btn" href="${amazonUrl(b)}" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon →</a>
     </div>
