@@ -123,9 +123,15 @@
   .stars{position:relative;display:inline-block;font-size:13px;line-height:1;letter-spacing:1px;color:#dfe3e8}
   .stars .sfill{position:absolute;left:0;top:0;overflow:hidden;white-space:nowrap;color:#ff9900}
   .rnum{font-size:12px;font-weight:700;color:#697386}
+  .progress{position:fixed;top:0;left:0;height:4px;width:0;z-index:60;background:linear-gradient(90deg,#8b5cf6,#fb7185,#f59e0b)}
+  .scount{position:fixed;right:16px;bottom:16px;z-index:55;background:rgba(20,10,46,.92);color:#fff;font-weight:700;font-size:13px;padding:8px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(50,50,93,.3);opacity:0;transition:opacity .25s;pointer-events:none}
+  .scount.on{opacity:1}
+  .scount small{font-weight:500;opacity:.8}
 </style>
 </head>
 <body>
+<div class="progress" id="prog"></div>
+<div class="scount" id="scount"></div>
 
 <section class="hero">
   <nav class="nav">
@@ -224,7 +230,7 @@ function amazonUrl(b){
 }
 function coverUrl(id){return `https://covers.openlibrary.org/b/id/${id}-L.jpg?default=false`;}
 const FAMOUS=/kiyosaki|greene|goleman|carnegie|covey|godin|frankl|napoleon hill|kahneman|cialdini|eric ries|clason|maxwell|robbins|sun tzu|gladwell|csikszentmihalyi|kawasaki|al ries|harv eker|og mandino/i;
-function score(b){let r=4.2;if(b.cover)r+=0.3;if(FAMOUS.test(b.full))r+=0.5;return Math.min(5,Math.round(r*10)/10);}
+function score(b){var hsh=hash(b.full);var r=3.9+(hsh%9)*0.1;if(b.cover)r+=0.1;if(FAMOUS.test(b.full))r+=0.2;return Math.min(4.9,Math.max(3.8,Math.round(r*10)/10));}
 function rateHTML(b){const r=score(b);const pct=r/5*100;return `<div class="rate" title="Valoración editorial de Emprendimiente — nuestra opinión, no es la nota de Amazon"><span class="stars"><span class="sfill" style="width:${pct}%">★★★★★</span>★★★★★</span><span class="rnum">${r.toFixed(1)}</span></div>`;}
 
 const grid=document.getElementById('grid'),chipsEl=document.getElementById('chips');
@@ -294,6 +300,14 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()
   window.aDot=function(n){go(n);reset();};
   function reset(){clearInterval(t);t=setInterval(function(){go(i+1);},5000);}
   if(slides.length>1)reset();
+})();
+
+
+(function(){
+  var prog=document.getElementById('prog'),sc=document.getElementById('scount');
+  function tot(){var g=document.getElementById('grid');return g?g.querySelectorAll('.card').length:0;}
+  function upd(){var d=document.documentElement;var max=(d.scrollHeight-d.clientHeight);var p=max>0?(d.scrollTop/max):0;if(prog)prog.style.width=(p*100).toFixed(1)+'%';var n=tot();if(sc&&n){var seen=Math.min(n,Math.max(1,Math.round(p*n)));sc.innerHTML=seen+' <small>/ '+n+' libros</small>';sc.classList.toggle('on',d.scrollTop>320);}}
+  window.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);setTimeout(upd,600);
 })();
 
 </script>
