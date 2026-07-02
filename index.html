@@ -223,6 +223,9 @@ const data=BOOKS.map((s,i)=>{
 }).sort((a,b)=>{const ca=a.cover?0:1,cb=b.cover?0:1;return ca!==cb?ca-cb:a.title.localeCompare(b.title,'es');});
 data.forEach((b,i)=>b._id=i);
 window.__data=data;
+const BOOKPAGES={"Las 48 Leyes del Poder":"las-48-leyes-del-poder","El Cuadrante del Flujo de Dinero":"el-cuadrante-del-flujo-del-dinero","Piense y Hágase Rico":"piense-y-hagase-rico","Cómo Ganar Amigos e Influir sobre las Personas":"como-ganar-amigos-e-influir-sobre-las-personas","Inteligencia Emocional":"inteligencia-emocional","Los 7 hábitos de la gente altamente efectiva":"los-7-habitos-de-la-gente-altamente-efectiva","La Vaca Púrpura":"la-vaca-purpura","El hombre en busca de sentido":"el-hombre-en-busca-de-sentido"};
+const AUTHORSLUG=[[/greene/i,"robert-greene"],[/napoleon hill/i,"napoleon-hill"],[/kiyosaki/i,"robert-kiyosaki"],[/carnegie/i,"dale-carnegie"],[/goleman/i,"daniel-goleman"],[/covey/i,"stephen-covey"],[/godin/i,"seth-godin"],[/frankl/i,"viktor-frankl"]];
+function authorSlug(a){for(var k=0;k<AUTHORSLUG.length;k++){if(AUTHORSLUG[k][0].test(a))return AUTHORSLUG[k][1];}return null;}
 
 function amazonUrl(b){
   const q=encodeURIComponent((b.title+" "+b.author).trim()+" libro");
@@ -280,6 +283,10 @@ function openModal(id){
   document.getElementById('m-author').textContent=b.author||'';
   document.getElementById('m-desc').textContent=b.desc||'Descripción no disponible.';
   document.getElementById('m-amazon').href=amazonUrl(b);
+  var __bp=BOOKPAGES[b.title],__mf=document.getElementById('m-full');
+  if(__bp){__mf.href='/blog/'+__bp+'.html';__mf.style.display='';}else{__mf.style.display='none';}
+  var __as=authorSlug(b.author||''),__ma=document.getElementById('m-author');
+  if(__as){__ma.innerHTML='<a href="/blog/'+__as+'.html" style="color:#635bff;font-weight:700">'+esc(b.author)+' &#8594;</a>';}
   const p=PALETTES[hash(b.full)%PALETTES.length];
   const cov=document.getElementById('m-cover');
   cov.style.background='radial-gradient(120% 120% at 18% 12%, '+p[0]+' 0%, rgba(0,0,0,0) 55%), radial-gradient(120% 120% at 86% 92%, '+p[2]+' 0%, rgba(0,0,0,0) 55%), linear-gradient(145deg, '+p[0]+', '+p[1]+' 55%, '+p[2]+')';
@@ -324,7 +331,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()
       </div>
     </div>
     <div class="dialog-body" id="m-desc"></div>
-    <div class="dialog-foot"><a class="btn" id="m-amazon" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon &#8594;</a></div>
+    <div class="dialog-foot"><a class="btn ghost" id="m-full" style="display:none;margin-bottom:10px">&#128214; Leer la ficha completa &#8594;</a><a class="btn" id="m-amazon" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon &#8594;</a></div>
   </div>
 </div>
 </body>
