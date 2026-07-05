@@ -257,8 +257,9 @@
    "kw": "poder sin límites resumen",
    "intent": "informational",
    "brief": "Explica el libro \"Poder sin Límites\" de Anthony Robbins: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Poder sin Límites Anthony Robbins"
+   "status": "published",
+   "amazonQuery": "Poder sin Límites Anthony Robbins",
+   "published_at": "2026-07-06"
   },
   {
    "slug": "anthony-robbins",
@@ -268,8 +269,9 @@
    "kw": "anthony robbins",
    "intent": "profile",
    "brief": "Perfil largo de Anthony Robbins: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Anthony Robbins"
+   "status": "published",
+   "amazonQuery": "Anthony Robbins",
+   "published_at": "2026-07-06"
   },
   {
    "slug": "retirate-joven-y-rico",
@@ -444,8 +446,9 @@
    "kw": "así se manipula al consumidor resumen",
    "intent": "informational",
    "brief": "Explica el libro \"Así se manipula al consumidor\" de Martin Lindstrom: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Así se manipula al consumidor Martin Lindstrom"
+   "status": "published",
+   "amazonQuery": "Así se manipula al consumidor Martin Lindstrom",
+   "published_at": "2026-07-06"
   },
   {
    "slug": "martin-lindstrom",
@@ -455,8 +458,9 @@
    "kw": "martin lindstrom",
    "intent": "profile",
    "brief": "Perfil largo de Martin Lindstrom: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Martin Lindstrom"
+   "status": "published",
+   "amazonQuery": "Martin Lindstrom",
+   "published_at": "2026-07-06"
   },
   {
    "slug": "desnudando-a-google",
@@ -818,8 +822,9 @@
    "kw": "el lobo de wall street resumen",
    "intent": "informational",
    "brief": "Explica el libro \"El Lobo de Wall Street\" de Jordan Belfort: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "El Lobo de Wall Street Jordan Belfort"
+   "status": "published",
+   "amazonQuery": "El Lobo de Wall Street Jordan Belfort",
+   "published_at": "2026-07-06"
   },
   {
    "slug": "jordan-belfort",
@@ -829,8 +834,9 @@
    "kw": "jordan belfort",
    "intent": "profile",
    "brief": "Perfil largo de Jordan Belfort: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Jordan Belfort"
+   "status": "published",
+   "amazonQuery": "Jordan Belfort",
+   "published_at": "2026-07-06"
   },
   {
    "slug": "hay-un-libro-dentro-de-ti",
