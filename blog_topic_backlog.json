@@ -2954,8 +2954,9 @@
    "kw": "gustave le bon",
    "intent": "profile",
    "brief": "Perfil largo de Gustave Le Bon: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Gustave Le Bon"
+   "status": "published",
+   "amazonQuery": "Gustave Le Bon",
+   "published_at": "2026-07-19"
   },
   {
    "slug": "la-guerra-del-marketing",
@@ -3330,8 +3331,9 @@
    "kw": "piensa como un freak resumen",
    "intent": "informational",
    "brief": "Explica el libro \"Piensa como un freak\" de Steven Levitt y Stephen Dubner: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Piensa como un freak Steven Levitt y Stephen Dubner"
+   "status": "published",
+   "amazonQuery": "Piensa como un freak Steven Levitt y Stephen Dubner",
+   "published_at": "2026-07-19"
   },
   {
    "slug": "steven-levitt-y-stephen-dubner",
@@ -3452,8 +3454,9 @@
    "kw": "la economía en una lección resumen",
    "intent": "informational",
    "brief": "Explica el libro \"La economía en una lección\" de Henry Hazlitt: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "La economía en una lección Henry Hazlitt"
+   "status": "published",
+   "amazonQuery": "La economía en una lección Henry Hazlitt",
+   "published_at": "2026-07-19"
   },
   {
    "slug": "henry-hazlitt",
@@ -4139,8 +4142,9 @@
    "kw": "jack ma",
    "intent": "profile",
    "brief": "Perfil largo de Jack Ma: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Jack Ma"
+   "status": "published",
+   "amazonQuery": "Jack Ma",
+   "published_at": "2026-07-19"
   },
   {
    "slug": "el-libro-negro-de-la-manipulacion",
@@ -4249,8 +4253,9 @@
    "kw": "howard gardner",
    "intent": "profile",
    "brief": "Perfil largo de Howard Gardner: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Howard Gardner"
+   "status": "published",
+   "amazonQuery": "Howard Gardner",
+   "published_at": "2026-07-19"
   },
   {
    "slug": "evaluacion-del-proceso-de-lectoescritura",
@@ -4327,8 +4332,9 @@
    "kw": "fluir resumen",
    "intent": "informational",
    "brief": "Explica el libro \"Fluir\" de Mihaly Csikszentmihalyi: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Fluir Mihaly Csikszentmihalyi"
+   "status": "published",
+   "amazonQuery": "Fluir Mihaly Csikszentmihalyi",
+   "published_at": "2026-07-19"
   },
   {
    "slug": "mihaly-csikszentmihalyi",
