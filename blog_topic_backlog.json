@@ -2091,8 +2091,9 @@
    "kw": "burlar al diablo resumen",
    "intent": "informational",
    "brief": "Explica el libro \"Burlar Al Diablo\" de Napoleon Hill: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Burlar Al Diablo Napoleon Hill"
+   "status": "published",
+   "amazonQuery": "Burlar Al Diablo Napoleon Hill",
+   "published_at": "2026-07-21"
   },
   {
    "slug": "como-leer-a-una-persona-como-un-libro",
@@ -2943,8 +2944,9 @@
    "kw": "psicología de las masas resumen",
    "intent": "informational",
    "brief": "Explica el libro \"Psicología de las Masas\" de Gustave Le Bon: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Psicología de las Masas Gustave Le Bon"
+   "status": "published",
+   "amazonQuery": "Psicología de las Masas Gustave Le Bon",
+   "published_at": "2026-07-21"
   },
   {
    "slug": "gustave-le-bon",
@@ -2966,8 +2968,9 @@
    "kw": "la guerra del marketing resumen",
    "intent": "informational",
    "brief": "Explica el libro \"La Guerra del Marketing\" de Al Ries y Jack Trout: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "La Guerra del Marketing Al Ries y Jack Trout"
+   "status": "published",
+   "amazonQuery": "La Guerra del Marketing Al Ries y Jack Trout",
+   "published_at": "2026-07-21"
   },
   {
    "slug": "emprende-empresa",
@@ -3343,8 +3346,9 @@
    "kw": "steven levitt y stephen dubner",
    "intent": "profile",
    "brief": "Perfil largo de Steven Levitt y Stephen Dubner: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Steven Levitt y Stephen Dubner"
+   "status": "published",
+   "amazonQuery": "Steven Levitt y Stephen Dubner",
+   "published_at": "2026-07-21"
   },
   {
    "slug": "como-manejar-tu-negocio",
@@ -3421,8 +3425,9 @@
    "kw": "jason fried y david heinemeier hansson",
    "intent": "profile",
    "brief": "Perfil largo de Jason Fried y David Heinemeier Hansson: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Jason Fried y David Heinemeier Hansson"
+   "status": "published",
+   "amazonQuery": "Jason Fried y David Heinemeier Hansson",
+   "published_at": "2026-07-21"
   },
   {
    "slug": "el-pequeno-instructivo-de-como-ser-huevon-sin-fracasar-en-la-vida",
@@ -4087,8 +4092,9 @@
    "kw": "richard koch",
    "intent": "profile",
    "brief": "Perfil largo de Richard Koch: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-   "status": "pending",
-   "amazonQuery": "Richard Koch"
+   "status": "published",
+   "amazonQuery": "Richard Koch",
+   "published_at": "2026-07-21"
   },
   {
    "slug": "el-mapa-para-alcanzar-el-exito",
