@@ -636,8 +636,9 @@
       "kw": "raimon samsó",
       "intent": "profile",
       "brief": "Perfil largo de Raimon Samsó: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-      "status": "pending",
-      "amazonQuery": "Raimon Samsó"
+      "status": "published",
+      "amazonQuery": "Raimon Samsó",
+      "published_at": "2026-07-23"
     },
     {
       "slug": "las-6-emes-del-exito",
@@ -726,8 +727,9 @@
       "kw": "allan y barbara pease",
       "intent": "profile",
       "brief": "Perfil largo de Allan y Barbara Pease: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-      "status": "pending",
-      "amazonQuery": "Allan y Barbara Pease"
+      "status": "published",
+      "amazonQuery": "Allan y Barbara Pease",
+      "published_at": "2026-07-23"
     },
     {
       "slug": "15-relatos-de-empresarios-que-cambiaron-la-manera-como-vivimos-y-hacem",
@@ -1651,8 +1653,9 @@
       "kw": "el arte de cautivar resumen",
       "intent": "informational",
       "brief": "Explica el libro \"El Arte De Cautivar\" de Guy Kawasaki: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-      "status": "pending",
-      "amazonQuery": "El Arte De Cautivar Guy Kawasaki"
+      "status": "published",
+      "amazonQuery": "El Arte De Cautivar Guy Kawasaki",
+      "published_at": "2026-07-23"
     },
     {
       "slug": "el-arte-de-la-guerra-hoy",
@@ -2206,8 +2209,9 @@
       "kw": "los 7 hábitos de los adolescentes altamente efectivos resumen",
       "intent": "informational",
       "brief": "Explica el libro \"Los 7 Hábitos de los Adolescentes Altamente Efectivos\" de Sean Covey: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-      "status": "pending",
-      "amazonQuery": "Los 7 Hábitos de los Adolescentes Altamente Efectivos Sean Covey"
+      "status": "published",
+      "amazonQuery": "Los 7 Hábitos de los Adolescentes Altamente Efectivos Sean Covey",
+      "published_at": "2026-07-23"
     },
     {
       "slug": "sean-covey",
@@ -2579,8 +2583,9 @@
       "kw": "el tao de warren buffett resumen",
       "intent": "informational",
       "brief": "Explica el libro \"El Tao de Warren Buffett\" de Mary Buffett y David Clark: premisa, estructura, 6-8 ideas/lecciones clave con tus palabras (sin copiar el texto), críticas y matices, para quién es y cómo aplicarlo. Enlaza al perfil del autor y al catálogo (/).",
-      "status": "pending",
-      "amazonQuery": "El Tao de Warren Buffett Mary Buffett y David Clark"
+      "status": "published",
+      "amazonQuery": "El Tao de Warren Buffett Mary Buffett y David Clark",
+      "published_at": "2026-07-23"
     },
     {
       "slug": "mary-buffett-y-david-clark",
@@ -2590,8 +2595,9 @@
       "kw": "mary buffett y david clark",
       "intent": "profile",
       "brief": "Perfil largo de Mary Buffett y David Clark: quién es/fue, trayectoria, ideas centrales de su obra, libros principales, críticas/controversias y por qué leerlo hoy. No inventes fechas/cifras; si dudas, omítelas. Busca su foto en Wikipedia/Wikimedia. Enlaza a los posts de sus libros y al catálogo (/).",
-      "status": "pending",
-      "amazonQuery": "Mary Buffett y David Clark"
+      "status": "published",
+      "amazonQuery": "Mary Buffett y David Clark",
+      "published_at": "2026-07-23"
     },
     {
       "slug": "rebelarse-vende",
